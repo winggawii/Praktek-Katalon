@@ -7,7 +7,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>3fc47c96-39c2-4e65-9726-4c4639e2dc3e</dataFileGUID>
-   <dataSourceUrl>C:\Users\winggawii\Documents\Praktek Katalon.xlsx</dataSourceUrl>
+   <dataSourceUrl>C:\Users\winggawii\Katalon Studio\Praktek Katalon\Praktek Katalon.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>

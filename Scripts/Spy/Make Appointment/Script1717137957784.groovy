@@ -64,12 +64,27 @@ WebUI.takeScreenshot()
 'Input kebutuhan Make Appointment'
 
 //select dropdown - field facility
-if(facility == 'Tokyo CURA Healthcare Center')
+//berdasarkan local variabel
+//if(facility == 'Tokyo CURA Healthcare Center')
+//{
+//	WebUI.selectOptionByValue(findTestObject('Object Repository/Spy/select_Tokyo CURA Healthcare Center                            Hongkong CURA Healthcare Center                            Seoul CURA Healthcare Center'), 'Tokyo CURA Healthcare Center', true)
+//}
+//else if(facility == 'Hongkong CURA Healthcare Center')	
+//{	
+//	WebUI.selectOptionByValue(findTestObject('Object Repository/Spy/select_Tokyo CURA Healthcare Center                            Hongkong CURA Healthcare Center                            Seoul CURA Healthcare Center'), 'Hongkong CURA Healthcare Center', true)
+//}
+//else
+//{
+//	WebUI.selectOptionByValue(findTestObject('Object Repository/Spy/select_Tokyo CURA Healthcare Center                            Hongkong CURA Healthcare Center                            Seoul CURA Healthcare Center'), 'Seoul CURA Healthcare Center', true)
+//}
+
+//berdasarkan data excel
+if(datafacility == 'Tokyo CURA Healthcare Center')
 {
 	WebUI.selectOptionByValue(findTestObject('Object Repository/Spy/select_Tokyo CURA Healthcare Center                            Hongkong CURA Healthcare Center                            Seoul CURA Healthcare Center'), 'Tokyo CURA Healthcare Center', true)
 }
-else if(facility == 'Hongkong CURA Healthcare Center')	
-{	
+else if(datafacility == 'Hongkong CURA Healthcare Center')
+{
 	WebUI.selectOptionByValue(findTestObject('Object Repository/Spy/select_Tokyo CURA Healthcare Center                            Hongkong CURA Healthcare Center                            Seoul CURA Healthcare Center'), 'Hongkong CURA Healthcare Center', true)
 }
 else
@@ -78,17 +93,39 @@ else
 }
 
 //click - field readmission
-if(readmission == true) 
+//berdasarkan local variabel
+//if(readmission == true) 
+//{
+//	WebUI.click(findTestObject('Object Repository/Spy/input_Apply for hospital readmission_hospital_readmission'))
+//}
+
+//berdasarkan data excel
+if(datareadmission == true)
 {
 	WebUI.click(findTestObject('Object Repository/Spy/input_Apply for hospital readmission_hospital_readmission'))
 }
 
 //click radio button - field program
-if(program == 'medicare')
+//berdasarkan local variabel
+//if(program == 'medicare')
+//{
+//	WebUI.click(findTestObject('Spy/input_Medicare_programs'))
+//}
+//else if(program == 'medicaid')
+//{
+//	WebUI.click(findTestObject('Spy/input_Medicaid_programs'))
+//}
+//else
+//{
+//	WebUI.click(findTestObject('Object Repository/Spy/input_None_programs'))
+//}
+
+//berdasarkan data excel
+if(dataprogram == 'medicare')
 {
 	WebUI.click(findTestObject('Spy/input_Medicare_programs'))
 }
-else if(program == 'medicaid')
+else if(dataprogram == 'medicaid')
 {
 	WebUI.click(findTestObject('Spy/input_Medicaid_programs'))
 }
@@ -96,14 +133,22 @@ else
 {
 	WebUI.click(findTestObject('Object Repository/Spy/input_None_programs'))
 }
-
+WebUI.delay(GlobalVariable.Waiting)
 WebUI.takeScreenshot()
 
 //input visit date
-WebUI.setText(findTestObject('Object Repository/Spy/input_Visit Date (Required)_visit_date'), visitdate)
+//berdasarkan local variabel
+//WebUI.setText(findTestObject('Object Repository/Spy/input_Visit Date (Required)_visit_date'), visitdate)
+
+//berdasarkan data excel
+WebUI.setText(findTestObject('Object Repository/Spy/input_Visit Date (Required)_visit_date'), datavisitdate)
 
 //input comment
-WebUI.setText(findTestObject('Object Repository/Spy/textarea_Comment_comment'), comment)
+//berdasarkan local variabel
+//WebUI.setText(findTestObject('Object Repository/Spy/textarea_Comment_comment'), comment)
+
+//berdasarkan data excel
+WebUI.setText(findTestObject('Object Repository/Spy/textarea_Comment_comment'), datacomment)
 
 WebUI.focus(findTestObject('Object Repository/Spy/button_Book Appointment'))
 WebUI.takeScreenshot()
