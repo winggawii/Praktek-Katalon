@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Make Appointment</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>bf74b60f-3c06-4f6e-8082-113f1f4ac7c7</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>8e83349a-ad38-45e6-ab16-ea1d91a03254</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0ed8606c-b493-49cf-9f0d-6179e51ae79d</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>70edeb42-8709-4132-b9fa-ef42d7b0a74c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>57305053-f306-4608-9d7e-f850089097bb</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c343c8b9-7b9b-4fd7-a57d-2d101b517db9</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Hongkong CURA Healthcare Center'</defaultValue>
+      <description></description>
+      <id>8e83349a-ad38-45e6-ab16-ea1d91a03254</id>
+      <masked>false</masked>
+      <name>facility</name>
+   </variable>
+   <variable>
+      <defaultValue>true</defaultValue>
+      <description></description>
+      <id>0ed8606c-b493-49cf-9f0d-6179e51ae79d</id>
+      <masked>false</masked>
+      <name>readmission</name>
+   </variable>
+   <variable>
+      <defaultValue>'medicaid'</defaultValue>
+      <description></description>
+      <id>70edeb42-8709-4132-b9fa-ef42d7b0a74c</id>
+      <masked>false</masked>
+      <name>program</name>
+   </variable>
+   <variable>
+      <defaultValue>'01/05/2024'</defaultValue>
+      <description></description>
+      <id>57305053-f306-4608-9d7e-f850089097bb</id>
+      <masked>false</masked>
+      <name>visitdate</name>
+   </variable>
+   <variable>
+      <defaultValue>'booking now'</defaultValue>
+      <description></description>
+      <id>c343c8b9-7b9b-4fd7-a57d-2d101b517db9</id>
+      <masked>false</masked>
+      <name>comment</name>
+   </variable>
+</TestCaseEntity>

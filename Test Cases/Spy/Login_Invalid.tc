@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Login_Invalid</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>cc841f4e-625c-4161-8cb4-125a52d4613e</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>264aa7ed-d81c-45e8-b1c8-54767bc6423a</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>55bb2a6d-9cb2-41b1-a928-988ff9dd943c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>27857a16-17ac-4c22-882a-93e1a47dc52f</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>5e21cbc5-cc96-412f-8d4e-8eac0b5c51a2</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Admin'</defaultValue>
+      <description></description>
+      <id>264aa7ed-d81c-45e8-b1c8-54767bc6423a</id>
+      <masked>false</masked>
+      <name>Username</name>
+   </variable>
+   <variable>
+      <defaultValue>'Tes'</defaultValue>
+      <description></description>
+      <id>55bb2a6d-9cb2-41b1-a928-988ff9dd943c</id>
+      <masked>false</masked>
+      <name>Password</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('Spy - Login').getValue(1, 2)</defaultValue>
+      <description></description>
+      <id>27857a16-17ac-4c22-882a-93e1a47dc52f</id>
+      <masked>false</masked>
+      <name>DataUserNameInvalid</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('Spy - Login').getValue(2, 2)</defaultValue>
+      <description></description>
+      <id>5e21cbc5-cc96-412f-8d4e-8eac0b5c51a2</id>
+      <masked>false</masked>
+      <name>DataPasswordInvalid</name>
+   </variable>
+</TestCaseEntity>
